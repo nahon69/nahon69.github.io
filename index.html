@@ -639,7 +639,7 @@ footer b{color:#fff;text-shadow:0 0 10px var(--neon),0 0 24px var(--neon2)}
     <li><a href="#hero">Accueil</a></li><li><a href="#about">À propos</a></li>
     <li><a href="#bts">BTS SIO</a></li><li><a href="#skills">Compétences</a></li>
     <li><a href="#timeline">Parcours</a></li><li><a href="#projects">Projets</a></li>
-    <li><a href="#veille">Veille</a></li><li><a href="#contact">Contact</a></li>
+    <li><a href="#e6">Fiches E6</a></li><li><a href="#veille">Veille</a></li><li><a href="#contact">Contact</a></li>
   </ul>
   <div class="burger" id="burger"><span></span><span></span><span></span></div>
 </nav>
@@ -647,7 +647,7 @@ footer b{color:#fff;text-shadow:0 0 10px var(--neon),0 0 24px var(--neon2)}
   <a href="#hero" onclick="cm()">Accueil</a><a href="#about" onclick="cm()">À propos</a>
   <a href="#bts" onclick="cm()">BTS SIO</a><a href="#skills" onclick="cm()">Compétences</a>
   <a href="#timeline" onclick="cm()">Parcours</a><a href="#projects" onclick="cm()">Projets</a>
-  <a href="#veille" onclick="cm()">Veille</a><a href="#contact" onclick="cm()">Contact</a>
+  <a href="#e6" onclick="cm()">Fiches E6</a><a href="#veille" onclick="cm()">Veille</a><a href="#contact" onclick="cm()">Contact</a>
 </div>
 
 <!-- HERO -->
@@ -707,6 +707,134 @@ footer b{color:#fff;text-shadow:0 0 10px var(--neon),0 0 24px var(--neon2)}
         <div class="bts-card rv"><div class="bts-ic">💼</div><h3>Projet M@banque</h3><p>Application bancaire réalisée dans le cadre du BTS SIO, avec une interface de gestion permettant de simuler les principales opérations d'une application bancaire.</p></div>
         <div class="bts-card rv"><div class="bts-ic"><i class="fa fa-phone-volume"></i></div><h3>Serveur de téléphonie VoIP</h3><p>Mise en place d'un serveur de téléphonie <strong>VoIP</strong> avec <strong>IPBX</strong> afin de gérer les appels internes, organiser les postes téléphoniques et centraliser la communication de l'infrastructure.</p></div>
         <div class="bts-card rv"><div class="bts-ic"><i class="fa fa-shield-halved"></i></div><h3>Pare-feu HA avec filtrage web</h3><p>Déploiement d'un pare-feu en <strong>haute disponibilité</strong> avec <strong>pfSense</strong>, intégrant des règles de sécurité réseau, le contrôle des flux et un système de <strong>filtrage web</strong>.</p></div>
+      </div>
+    </div></section>
+
+    <!-- FICHES E6 & DOCUMENTATION -->
+    <section id="e6"><div class="max">
+      <p class="s-label rv">Épreuve E6 — BTS SIO SISR</p>
+      <h2 class="s-title rv">Fiches de réalisation professionnelle</h2>
+      <p class="rv" style="color:var(--muted);font-size:.9rem;line-height:1.85;max-width:760px;margin-bottom:2.5rem">
+        Fiches descriptives réalisées dans le cadre de l'<strong style="color:#fff">épreuve E6 — Administration des systèmes et des réseaux (option SISR)</strong>, session 2026. Organisation support : <strong style="color:#fff">GSB (Les Chassagnes)</strong>. Candidat N° <strong style="color:#fff">02249679993</strong>.
+      </p>
+
+      <div class="pj-grid">
+
+        <!-- Fiche 1 : Serveur Syslog / Wazuh -->
+        <div class="pj-card rv">
+          <div class="pj-top">
+            <div class="pj-emoji"><i class="fa fa-tower-broadcast" style="color:var(--neonlight)"></i></div>
+            <h3>Serveur Syslog / SIEM Wazuh</h3>
+          </div>
+          <p>Mise en place d'une solution centralisée de collecte et d'analyse des journaux système. Installation de <strong>Wazuh</strong> (Indexer, Manager, Dashboard, Filebeat) sur Ubuntu Server virtualisé sous VMware.</p>
+          <p style="font-size:.83rem;color:var(--muted)"><strong style="color:var(--text)">Résultats :</strong> Déploiement des agents sur postes Windows et Linux, remontée des événements de sécurité, tableau de bord de supervision opérationnel.</p>
+          <div class="tags">
+            <span class="tag">Wazuh</span><span class="tag">SIEM</span><span class="tag">Ubuntu Server</span><span class="tag">VMware</span><span class="tag">Filebeat</span><span class="tag">Linux Agent</span>
+          </div>
+          <div class="pj-foot" style="margin-top:.85rem">
+            <div style="display:flex;gap:.5rem;flex-wrap:wrap;font-size:.78rem;color:var(--muted)">
+              <span><i class="fa fa-users fa-xs"></i> En équipe</span>
+              <span><i class="fa fa-calendar fa-xs"></i> 29/05/2026</span>
+              <span><i class="fa fa-location-dot fa-xs"></i> Les Chassagnes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fiche 2 : Pare-feu HA + filtrage -->
+        <div class="pj-card rv">
+          <div class="pj-top">
+            <div class="pj-emoji"><i class="fa fa-fire-flame-curved" style="color:var(--neonlight)"></i></div>
+            <h3>Pare-feu HA + Filtrage web</h3>
+          </div>
+          <p>Sécurisation d'un laboratoire de recherche par deux <strong>pfSense</strong> en haute disponibilité avec <strong>CARP</strong>. Intégration Active Directory pour identification des utilisateurs et politiques par groupe.</p>
+          <p style="font-size:.83rem;color:var(--muted)"><strong style="color:var(--text)">Résultats :</strong> Bascule automatique testée et validée. Filtrage web via Squid/SquidGuard avec listes noires. Restrictions appliquées par utilisateur (ex. MARTIN).</p>
+          <div class="tags">
+            <span class="tag">pfSense</span><span class="tag">CARP</span><span class="tag">Active Directory</span><span class="tag">Squid</span><span class="tag">SquidGuard</span><span class="tag">Haute dispo.</span>
+          </div>
+          <div class="pj-foot" style="margin-top:.85rem">
+            <div style="display:flex;gap:.5rem;flex-wrap:wrap;font-size:.78rem;color:var(--muted)">
+              <span><i class="fa fa-users fa-xs"></i> En équipe</span>
+              <span><i class="fa fa-calendar fa-xs"></i> 29/05/2026</span>
+              <span><i class="fa fa-location-dot fa-xs"></i> Les Chassagnes</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Documentation AP -->
+      <h2 class="s-title rv" style="margin-top:3.5rem">Documentation technique — AP</h2>
+      <p class="rv" style="color:var(--muted);font-size:.9rem;line-height:1.85;max-width:760px;margin-bottom:2.5rem">
+        Documentation des réalisations professionnelles rédigée par <strong style="color:#fff">Naïm Loucif</strong> dans le cadre du BTS SIO SISR.
+      </p>
+
+      <div class="stage-tl">
+
+        <!-- AP1 : Wazuh -->
+        <div class="stage-item rv">
+          <div class="stage-dot"></div>
+          <div class="stage-card">
+            <div class="stage-head">
+              <span class="stage-badge">AP 1</span>
+              <h3>Mise en place d'un serveur Syslog / SIEM Wazuh</h3>
+            </div>
+            <p>Déploiement d'une infrastructure <strong>Wazuh complète</strong> sur Ubuntu Server virtualisé sous VMware Workstation. L'environnement comprenait le <em>Wazuh Manager</em>, l'<em>Indexer</em>, <em>Filebeat</em> et le <em>Dashboard</em>.</p>
+            <p>Les agents Wazuh ont été déployés sur des VMs <strong>Windows 10/11</strong> et <strong>Linux</strong> afin de centraliser la collecte des journaux. Des tests de sécurité ont été effectués pour valider la remontée des événements dans le tableau de bord.</p>
+            <p style="color:var(--neonlight);font-size:.82rem"><i class="fa fa-key fa-xs"></i> Accès : <strong>Naimlehna1!</strong> / <a href="https://nahon69.github.io/" target="_blank" style="color:var(--neonlight)">nahon69.github.io</a></p>
+            <div class="tags" style="margin-top:.85rem">
+              <span class="tag">Wazuh</span><span class="tag">SIEM</span><span class="tag">Ubuntu Server</span><span class="tag">VMware</span><span class="tag">Filebeat</span><span class="tag">Windows Agent</span><span class="tag">Linux Agent</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AP2 : VoIP -->
+        <div class="stage-item rv">
+          <div class="stage-dot"></div>
+          <div class="stage-card">
+            <div class="stage-head">
+              <span class="stage-badge">AP 2</span>
+              <h3>Mise en place d'un serveur de téléphonie VoIP IPBX</h3>
+            </div>
+            <p>Déploiement d'une infrastructure de téléphonie sur IP avec <strong>Asterisk</strong> sur Ubuntu Server virtualisé. Configuration du service <strong>SIP</strong> et création des extensions téléphoniques.</p>
+            <p>Les postes utilisateurs ont été configurés via <strong>Zoiper</strong> (téléphone IP logiciel). Tests d'appels entre extensions, vérification de l'enregistrement des utilisateurs et contrôle de la qualité audio.</p>
+            <div class="tags" style="margin-top:.85rem">
+              <span class="tag">Asterisk</span><span class="tag">VoIP</span><span class="tag">SIP</span><span class="tag">Zoiper</span><span class="tag">Ubuntu Server</span><span class="tag">VMware</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AP3 : Pare-feu HA -->
+        <div class="stage-item rv">
+          <div class="stage-dot"></div>
+          <div class="stage-card">
+            <div class="stage-head">
+              <span class="stage-badge">AP 3</span>
+              <h3>Pare-feu haute disponibilité avec filtrage web</h3>
+            </div>
+            <p>Deux pare-feux <strong>pfSense</strong> configurés en haute disponibilité via le protocole <strong>CARP</strong>. Synchronisation automatique des règles de filtrage, des états de connexion et des configurations entre les deux nœuds.</p>
+            <p>Intégration au domaine <strong>Active Directory</strong> pour l'identification des utilisateurs. Déploiement de <strong>Squid</strong> et <strong>SquidGuard</strong> pour le filtrage web avec listes noires. Test de bascule automatique validé.</p>
+            <div class="tags" style="margin-top:.85rem">
+              <span class="tag">pfSense</span><span class="tag">CARP</span><span class="tag">Active Directory</span><span class="tag">Squid</span><span class="tag">SquidGuard</span><span class="tag">Windows Server</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- AP4 : VPN Site à Site -->
+        <div class="stage-item rv">
+          <div class="stage-dot"></div>
+          <div class="stage-card">
+            <div class="stage-head">
+              <span class="stage-badge">AP 4</span>
+              <h3>Mise en place d'un VPN Site à Site</h3>
+            </div>
+            <p>Interconnexion de deux sites distants via un tunnel <strong>VPN IPsec</strong> sur pfSense. Configuration des algorithmes de chiffrement, des méthodes d'authentification et des réseaux autorisés.</p>
+            <p>Création des règles de pare-feu et des routes adaptées pour le transfert du trafic. Validation par ping et tracert entre les postes des deux sites, et contrôle du tunnel IPsec depuis l'interface pfSense.</p>
+            <div class="tags" style="margin-top:.85rem">
+              <span class="tag">VPN</span><span class="tag">IPsec</span><span class="tag">pfSense</span><span class="tag">Routage</span><span class="tag">Chiffrement</span><span class="tag">VMware</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div></section><!-- SKILLS -->
 <section id="skills"><div class="max">
